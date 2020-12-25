@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import {
-    BrowserRouter as Router,
+
     Switch,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
 import Home from "../../Pages/Home";
 import Portfolio from "../../Pages/Portfolio";
 import Dashboard from "../../Pages/Dashboard";
+import Reports from "../../Pages/Reports";
 
 
 export default function TopNavRouter() {
@@ -24,6 +24,9 @@ export default function TopNavRouter() {
             </Route>
             <Route path="/Portfolio" exact>
                 <Portfolio/>
+            </Route>
+            <Route path="/Reports" exact>
+                <Reports/>
             </Route>
 
 
