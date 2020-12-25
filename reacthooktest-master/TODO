@@ -1,0 +1,10 @@
+So What do i need to do now ?
+
+Encapsulate the Columns handling
+Figure out a way to push data upstream to parent components
+Figure out a Datastore system
+Interval Ticker updater
+Ticker fetch on Ticker Edit
+
+
+

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-blue {
+        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md;
+    }
+    .btn-blue:hover{
+        @apply py-2 px-4 bg-blue-700 text-white font-semibold rounded-lg shadow-md;
+    }
+    .TD-btn-nav{
+        @apply m-1 py-1 px-2 bg-TDBGBaseLight text-TDSubdue font-semibold rounded-sm;
+    }
+    .TD-btn-nav:hover{
+        @apply m-1 py-1 px-2 bg-TDBGBaseLighter text-TDSubdue font-semibold rounded-sm;
+    }
+    .TD-ticker-group {
+        @apply m-2 py-2 px-2 bg-TDBGBaseLight rounded-md;
+    }
+    .TD-structural-box {
+        @apply m-2 py-2 px-2 bg-TDBGBaseLight rounded-md text-TDOffWhite;
+    }
+
+}

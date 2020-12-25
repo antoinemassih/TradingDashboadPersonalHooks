@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CA27D136-B67C-4FF9-A95A-583D46FF6B3A</title>
+    <defs>
+        <path d="M4.19412315,3.65928408 C4.13188577,3.78326172 4.01164209,3.86923287 3.87251036,3.88922898 L1.77445724,4.19076275 L3.29225904,5.64438031 C3.39312609,5.74098194 3.43916604,5.88021615 3.41536383,6.0166744 L3.05725324,8.06972536 L4.93300269,7.09978317 C5.0576072,7.03535069 5.2064815,7.03535069 5.33108602,7.09978317 L7.20683546,8.06972536 L6.84872488,6.0166744 C6.82492267,5.88021615 6.87096261,5.74098194 6.97182967,5.64438031 L8.48963147,4.19076275 L6.39157834,3.88922898 C6.25244662,3.86923287 6.13220294,3.78326172 6.06996555,3.65928408 L5.13204435,1.7909336 L4.19412315,3.65928408 Z M3.52660364,3.0890461 L4.74858397,0.654846351 C4.90545437,0.342358615 5.35863434,0.342358615 5.51550473,0.654846351 L6.73748507,3.0890461 L9.47020773,3.48179505 C9.82082914,3.53218662 9.96057206,3.95596427 9.70673272,4.19906934 L7.7297017,6.09249642 L8.19628488,8.76742171 C8.25620399,9.11093844 7.88948902,9.37288228 7.57576585,9.21065734 L5.13204435,7.94701917 L2.68832286,9.21065734 C2.37459969,9.37288228 2.00788472,9.11093844 2.06780383,8.76742171 L2.53438701,6.09249642 L0.557355985,4.19906934 C0.303516647,3.95596427 0.443259566,3.53218662 0.793880974,3.48179505 L3.52660364,3.0890461 Z" id="path-1"></path>
+        <rect id="path-3" x="0" y="0" width="10.2631579" height="10.0915332"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10.2631579" height="10.0915332" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-3" transform="translate(-835.000000, -132.000000)">
+            <g id="MODULE/Market-Ticker-Group" transform="translate(324.000000, 71.000000)">
+                <g id="MODULE/-Market-Ticker-Small" transform="translate(372.000000, 4.500000)">
+                    <g id="MODULE/Icon-set-vertical" transform="translate(138.000000, 26.000000)">
+                        <g id="icon" transform="translate(0.000000, 29.217391)">
+                            <g id="ICON/star" transform="translate(1.368421, 1.345538)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="COLOR/BASE" mask="url(#mask-2)" fill="#1A1F36" stroke="#979797" stroke-dasharray="2" stroke-opacity="0.264605978" stroke-width="2">
+                                    <use id="Custom-color-3" mask="url(#mask-4)" xlink:href="#path-3"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
