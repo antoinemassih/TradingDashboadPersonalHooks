@@ -24,26 +24,17 @@ async function getAllAlerts(){
 }
 
 export function groupAlertsByStock(data){
-    let newdata = [];
-    console.log(data);
-    for(const[value] of data.entries()){
-        let isthere = false;
-        for(const symbols of newdata.entries()){
-            if (symbols === value['symbol']){
-            isthere = true;
-            }
-        if( isthere === false ){
+let newdata = [];
+    for(const[key,value] of data.entries()){
+        if(newdata[value['symbol']]!=null){
+            newdata[value['symbol']].push(value);
+        }else{
             newdata[value['symbol']]=[];
-            newdata[value['symbol']] = value;
+            newdata[value['symbol']].push(value);
             console.log(value['symbol']);
 
-        }else{
-            newdata[value['symbol']].push(value);
-
         }
 
-        }
-        console.log(isthere);
     }
 return newdata;
 }
