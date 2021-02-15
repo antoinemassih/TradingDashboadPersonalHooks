@@ -9,6 +9,7 @@ import Home from "../../Pages/Home";
 import Portfolio from "../../Pages/Portfolio";
 import Dashboard from "../../Pages/Dashboard";
 import AlertsPage from "../../Pages/AlertsPage";
+import Reports from "../../Pages/Reports";
 
 
 export default function TopNavRouter() {
@@ -28,6 +29,9 @@ export default function TopNavRouter() {
             </Route>
             <Route path="/Alerts" exact>
                 <AlertsPage/>
+            </Route>
+            <Route path="/Reports" exact>
+                <Reports/>
             </Route>
 
 

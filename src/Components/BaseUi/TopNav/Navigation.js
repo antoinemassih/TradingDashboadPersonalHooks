@@ -25,7 +25,7 @@ export default function Navigation() {
                                     <NavRouterButton link="/Dashboard" title="Dashboards"/>
                                     <NavRouterButton link="/Portfolio" title="Portfolio"/>
                                     <NavRouterButton link="/Alerts" title="Alerts"/>
-                                    <NavRouterButton link="/" title="Reports"/>
+                                    <NavRouterButton link="/Reports" title="Reports"/>
                                     <NavRouterButton link="/" title="Marketplace"/>
                                     <NavRouterButton link="/" title="Community"/>
                                 </nav>

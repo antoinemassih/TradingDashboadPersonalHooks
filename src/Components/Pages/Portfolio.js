@@ -7,7 +7,7 @@ import TradeTileGroup from "../Dashboard/TradeTileGroup";
 import TradeDashboard from "../Dashboard/TradesDashboard";
 
 
-export default function Home() {
+export default function Portfolio() {
     // Declare a new state variable, which we'll call "count"
     const [count, setCount] = useState(0);
 
