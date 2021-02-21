@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.2.0",
     "axios": "^0.21.1",
     "d3": "^6.5.0",
+    "d3-sankey": "^0.12.3",
     "e-trade-api": "^0.2.0",
     "json": "^10.0.0",
     "postcss": "^8.1.6",

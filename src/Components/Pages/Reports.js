@@ -3,9 +3,11 @@ import React, { useState, useEffect } from 'react';
 import {fetchTradeHistory} from "../../Utilities/Data/Trades/TradeHistory";
 
 import Field from "../Dashboard/Widgets/Field";
-import MyBarChart from "../Charts/myBarChart";
+import BarChart from "../Charts/BarChart";
 import PieChart from "../Charts/PieChart";
 import TreeMap from "../Charts/Treemap";
+import Sankey from "../Charts/Sankey";
+import SankeyChart from "../Charts/Sankey";
 
 
 
@@ -17,7 +19,7 @@ export default function Reports() {
     const[PieData,setPieData] = useState( [{ label: 'Apples', value: 10 }, { label: 'Oranges', value: 20 }, { label: 'pears', value: 20 }, { label: 'something', value: 20 }])
     const [tradesdata,settradesdata]=useState([]);
     const [TreemapData,setTreemap] = useState([{name:"Origin",parent:null,value:null},{name:"position 1",parent:'Origin',value:2},{name:"position 2",parent:'Origin',value:4},{name:"position 3",parent:'Origin',value:2},{name:"position 4",parent:'Origin',value:4}]);
-
+    const[SankeyData,setSankeyData] = useState({"nodes": [{"node": 0, "name": "node0"}, {"node": 1, "name": "node1"},{"node": 2, "name": "node2"},{"node": 3, "name": "node3"}, {"node": 4, "name": "node4"}], "links": [{"source": 0, "target": 2, "value": 2}, {"source": 1, "target": 2, "value": 2}, {"source": 1, "target": 3, "value": 2}, {"source": 0, "target": 4, "value": 2}, {"source": 2, "target": 3, "value": 2}, {"source": 2, "target": 4, "value": 2}, {"source": 3, "target": 4, "value": 4}]});
     useEffect(() => {
         changeData();
     }, []);
@@ -25,6 +27,7 @@ export default function Reports() {
     const changeData = () => {
 
     }
+
 
     useEffect(()=>{
         fetchTradeHistory().then(result=> {
@@ -45,9 +48,9 @@ export default function Reports() {
 
                     <div className="App">
                         <button onClick={changeData}>Change Data</button>
-                        <MyBarChart data={thedata} xvalue="holdingtime" yvalue="gainloss"/>
-                        <PieChart data = {PieData}/>
-                        <TreeMap data = {TreemapData}/>
+                        <BarChart data={thedata} xvalue="holdingtime" yvalue="gainloss"/>
+
+                        <SankeyChart data={SankeyData}/>
                     </div>
 
 
