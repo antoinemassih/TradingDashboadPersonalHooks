@@ -4,6 +4,7 @@ import {fetchTradeHistory} from "../../Utilities/Data/Trades/TradeHistory";
 
 import Field from "../Dashboard/Widgets/Field";
 import MyBarChart from "../Charts/myBarChart";
+import PieChart from "../Charts/PieChart";
 
 
 
@@ -12,6 +13,7 @@ import MyBarChart from "../Charts/myBarChart";
 export default function Reports() {
     // Declare a new state variable, which we'll call "count"
     const [thedata, setData] = useState([]);
+    const[PieData,setPieData] = useState( [{ label: 'Apples', value: 10 }, { label: 'Oranges', value: 20 }, { label: 'pears', value: 20 }, { label: 'something', value: 20 }])
     const [tradesdata,settradesdata]=useState([]);
 
     useEffect(() => {
@@ -42,6 +44,7 @@ export default function Reports() {
                     <div className="App">
                         <button onClick={changeData}>Change Data</button>
                         <MyBarChart data={thedata} xvalue="holdingtime" yvalue="gainloss"/>
+                        <PieChart data = {PieData}/>
                     </div>
 
 
